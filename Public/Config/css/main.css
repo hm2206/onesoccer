@@ -1,0 +1,19 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+body{
+	background: rgba(7, 22, 74, 0.2);
+}
