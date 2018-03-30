@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>basico</title>
-</head>
-<body>
+<?php
+	include "App/Models/Object/basico.php";
 
-	<h1>Bienvenido a la plantilla del usuario basico</h1>
+	$root = new Route;
+	$root->enlacesBasico();
 
-</body>
-</html>
+?>

@@ -6,7 +6,7 @@ Class Conexion{
 							"host" => "localhost",//host por defecto de la base de datos es "localhost"
 							"usuario" => "root",//usuario por defecto de la base de datos es "root"
 							"password" => "",//password por defecto esta vacia
-							"DataBase" => "prueba"//ingrese la base de datos de su aplicacion
+							"DataBase" => "onesoccer"//ingrese la base de datos de su aplicacion
 							);
 	private $con;
 

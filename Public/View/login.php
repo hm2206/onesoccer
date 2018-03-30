@@ -1,5 +1,5 @@
 <?php
-	
+
 	$lib = new Libreria;
 	$helpers = new Core;
 
@@ -17,9 +17,9 @@
 
 <div class="container contenido">
 	<br>
-	<h1 class="titulo">Plantilla login de ejemplo de BackEasy</h1>
+	<h1 class="titulo">Bienvenidos a onesoccer</h1>
 	<br>
-	
+
 	<a href="<?php echo $helpers->url_link['principal'] . 'welcome/';?>">volver</a>
 
 	<br><br>

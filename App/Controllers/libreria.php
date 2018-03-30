@@ -65,7 +65,7 @@
 								);
 
 		private $basico = array(//css para el objeto basico
-								'bootstrap'
+								'inicio'
 								);
 
 

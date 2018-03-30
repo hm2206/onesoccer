@@ -1,10 +1,9 @@
-<?php 
+<?php
 session_start();//aqui continuamos la sesion
-Class Core{//rutas principal o publica 
+Class Core{//rutas principal o publica
 
-	protected $inicio = "welcome";//ruta principal de la app web 
+	protected $inicio = "login";//ruta principal de la app web
 	protected $sesion;//ruta principal al inicior la session
-
 
 	function urlSession(){//ruta default de la pagina principal de la session
 		if($_SESSION){
@@ -14,11 +13,9 @@ Class Core{//rutas principal o publica
 	}
 
 	private $lista = array(//aqui se agregan las urls permitidas// solo las publicas ($url[0])
-									 			 
+
 								/*agregar de arriba hacia abajo*/
-									'login',
-									'foto',
-									'welcome'
+									'login'
 								);
 
 
@@ -36,11 +33,11 @@ Class Core{//rutas principal o publica
 
 
 	public $url_link = array(//estas rutas sirven solo en las vistas, en el documento html. Ejejmplo: mostrar imagenes, css, enviar formularios, etc.
-									'principal' => 'http://localhost/backEasy/',//las cuales son llamadas asi: <?php echo Core\Core::$url_link['especificar la ruta']
-									'models' => 'http://localhost/backEasyApp/Models/',
-									'helpers' => 'http://localhost/backEasy/App/helpers/',
-									'public' => 'http://localhost/backEasy/Public/',
-									'config' => 'http://localhost/backEasy/Public/Config/'
+									'principal' => 'http://localhost/onesoccer/',//las cuales son llamadas asi: <?php echo Core\Core::$url_link['especificar la ruta']
+									'models' => 'http://localhost/onesoccer/App/Models/',
+									'helpers' => 'http://localhost/onesoccer/App/helpers/',
+									'public' => 'http://localhost/onesoccer/Public/',
+									'config' => 'http://localhost/onesoccer/Public/Config/'
  									);
 
 
@@ -48,14 +45,14 @@ Class Core{//rutas principal o publica
 	 	/*
 			============================================
 			||		 Configuracion de Rutas
-			============================================  
-		*/		
+			============================================
+		*/
 		'BASE' => '/index.php',// Ruta base de la APP WEB
 		'MODELS' => 'App/Models/',//Ruta de los Models de la APP WEB
-		'CONFIG' => 'App/Config/', //Ruta de las Configuraciones, como css, js, imagen, lib 
+		'CONFIG' => 'App/Config/', //Ruta de las Configuraciones, como css, js, imagen, lib
 		'HELPERS' => 'App/helpers/', //Ruta de los ayudantes de los models
-		'VIEW' => 'Public/View/'); // Ruta de las vistas 
-			
+		'VIEW' => 'Public/View/'); // Ruta de las vistas
+
 
 
 	private  function rutas($ruta){
@@ -133,7 +130,7 @@ Class Core{//rutas principal o publica
 			$link = $this->ruta['VIEW'] . $_SESSION['tipo'] . "/" . self::urlSession() . ".php";
 			include $link;
 		}
-	} 
+	}
 }
 
 

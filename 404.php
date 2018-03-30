@@ -7,7 +7,7 @@
 
 	<h4>No se encontro la pagina</h4>
 
-	<a href="http://localhost/backEasy/">regresar</a>
+	<a href="http://localhost/onesoccer/">regresar</a>
 
 </body>
 </html>

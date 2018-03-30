@@ -1,4 +1,4 @@
-<?php 
+<?php
 	class Route extends Core{//ruta secundaria de la aplicacion
 
 		private $premium = array(//rutas permitidas para los usuarios premium
@@ -83,7 +83,7 @@
 		//rutas alternas de los usuarios basico
 
 		private  function Basico($ruta){
-			foreach ($this->links as $url) {
+			foreach ($this->basico as $url) {
 				if ($ruta == $url) {
 					$enlace  = $url;
 					break;
