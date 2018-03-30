@@ -65,7 +65,10 @@
 								);
 
 		private $basico = array(//css para el objeto basico
-								'inicio'
+								'inicio',
+								'menu',
+								'liga',
+								'club'
 								);
 
 

@@ -1,0 +1,68 @@
+
+.titulo-group{
+  padding: 2em;
+}
+
+  .option{
+    width: 400px;
+    margin-left: 3em;
+    margin-bottom: 3em;
+  }
+
+    .option a{
+      color: #252932;
+      padding: 1em;
+      border-bottom: 3px solid #2e7d32;
+    }
+
+
+
+.titulo-news{
+  padding: 0.5em;
+  margin-left: 2em;
+}
+
+  .tabla-new{
+    margin-left: 2em;
+  }
+
+
+  .card-new{
+    border: 1em solid transparent;
+  }
+
+    .cont-new{
+      width: 250px;
+      height: 200px;
+      border-top-left-radius: 0.4em;
+      border-top-right-radius: 0.4em;
+      overflow: hidden;
+    }
+        .img-new{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .cont-text{
+          width: 250px;
+          background: #252932;
+          color: #fff;
+          padding: 0.5em;
+          word-wrap: break-word;
+          border-bottom-left-radius: 0.4em;
+          border-bottom-right-radius: 0.4em;
+        }
+
+/*
+  editar tammaño de las card
+*/
+
+.big{
+  width: 500px;
+  height: 300px;
+}
+
+.big-text{
+  width: 500px;
+}

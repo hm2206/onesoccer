@@ -16,9 +16,9 @@
 								);
 
 		private $basico = array(//rutas permitidas para los usuarios basico
-								'horario',
-								'perfil',
-								'nota',
+								'jugador',
+								'club',
+								'liga',
 								'inicio'
 								);
 

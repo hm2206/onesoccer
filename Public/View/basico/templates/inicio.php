@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>chanmpions</title>
+  <title>OneSoccer</title>
   <?php
     $lib = new Libreria;
     $lib->CssBasico();
@@ -14,11 +14,11 @@
     <div class="logo">ONE FOOTBALL</div>
 
     <nav>
-      <a href="#">UEFA champions league</a>
-      <a href="#">eurocopa</a>
-      <a href="#">Premier leage</a>
-      <a href="#">Bumdesliga</a>
-      <a href="">copa del rey</a>
+      <a href="<?php echo $link->url_link['principal'] . "basico/liga/UEFA/"?>">UEFA champions league</a>
+      <a href="<?php echo $link->url_link['principal'] . "basico/liga/Eurocopa/"?>">Eurocopa</a>
+      <a href="<?php echo $link->url_link['principal'] . "basico/liga/PremierLeague/"?>">Premier league</a>
+      <a href="<?php echo $link->url_link['principal'] . "basico/liga/Bumdesliga/"?>">Bumdesliga</a>
+      <a href="<?php echo $link->url_link['principal'] . "basico/liga/CopaDelRey/"?>">Copa del rey</a>
     </nav>
   </div></header>
 <center>
