@@ -1,6 +1,12 @@
 <?php
   $root = new Core;
   $lib = new Libreria;
+  $obj = new Basico;
+  $get = new Get;
+
+  //Traer informacion de la base de datos
+  $get->get2($_GET['url']);
+  $liga = $obj->liga($get->setGet());
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -18,81 +24,12 @@
 
     <div class="contenido-liga">
       <div class="liga-top">
-        <h2>Champions League</h2>
+        <h2><?php echo $liga['nombre'];?></h2>
         <h3>Equipos</h3>
-        <div class="liga-equipos"><a class="equipos-box" href="<?php echo $root->url_link['principal'] . "basico/club/Barcelona/";?>">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a><a class="equipos-box" href="inicio.html">
-            <div class="box-img"><img src="img/3.png" alt="">
-              <p>españa puntaje: 36</p>
-            </div>
-            <div class="box-text">
-              <h3>Nombre del club</h3>
-            </div></a>
+        <div class="liga-equipos">
+            <?php
+                $obj->setLiga();
+            ?>
         </div>
       </div>
     </div>

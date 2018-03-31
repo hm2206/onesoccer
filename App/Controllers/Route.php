@@ -100,10 +100,10 @@
 				$url = explode('/', $_GET['url']);
 				if(isset($url[1])){
 				$link = $url[1];
-				require "Public/View/" . $_SESSION['tipo'] . "/templates/" . self::Basico($link) . ".php";
+				include "Public/View/" . $_SESSION['tipo'] . "/templates/" . self::Basico($link) . ".php";
 				}
 			}else{
-				require "Public/View/" . $_SESSION['tipo'] . "/templates/inicio.php";
+			 	include "Public/View/" . $_SESSION['tipo'] . "/templates/inicio.php";
 			}
 		}
 
