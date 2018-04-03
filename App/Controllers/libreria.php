@@ -11,7 +11,8 @@
 								//archivo css por defecto de la AppWeb !Alert: para el buenfunacionamiento main debe estar al inicio
 								'bootstrap.min',
 								'font_size',
-								'main'
+								'main',
+								'crear'
 							);
 
 		private $js = array(//Javascrip permitidas //librerias js estandar

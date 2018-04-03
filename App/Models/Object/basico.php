@@ -46,7 +46,7 @@
 					while($fila = mysqli_fetch_array($datos)){
 						echo "<a class='equipos-box' href='" . $this->url_link['principal'] . "basico/club/".$fila[3]."/'>" .
             				"<div class='box-img'><img src='".$this->url_link['config']."img/perfil/".$fila[4]."'>" .
-              					"<p>Pais: " . utf8_decode($fila[2]) . " |  puntaje: ".$fila[5]."</p>" .
+              					"<p>Pais: " . utf8_decode($fila[2]) . " |  puntaje: ".utf8_encode($fila[5])."</p>" .
             				"</div>" .
             				"<div class='box-text'>" .
               					"<h3>" . $fila[3] . "</h3>" .
@@ -70,10 +70,35 @@
 			$fila = mysqli_fetch_array($datos);
 			$this->id = $fila[0];
 			//datos de los jugadores
-			$sql_j = "SELECT cod_jugador, nombre, ape, camiseta, posicion, goles, foto FROM jugador WHERE cod_club = '{$this->id}'";
+			$sql_j = "SELECT cod_jugador, nombre, ape, camiseta, posicion, goles, foto, cod_club FROM jugador WHERE cod_club = '{$this->id}'";
 			$datos_j = $this->con->consultaRetorno($sql_j);
 			include "App/helpers/basico/templates/club.php";
 		}
+
+		public function getPartidos($id)
+		{
+			$sql = "SELECT * FROM partido
+					WHERE cod_local = '$id' OR cod_visitante = '$id'";
+			$datos = $this->con->consultaRetorno($sql);
+			$validar = mysqli_num_rows($datos);
+			if($validar > 0)
+			{
+				$fila = mysqli_fetch_array($datos);
+				return $fila;
+			}else{
+				return 0;
+			}
+		}
+
+		public function setPartidos($id){
+			$sql = "SELECT * FROM club
+					WHERE cod_club = '$id'";
+			$datos = $this->con->consultaRetorno($sql);
+			$fila = mysqli_fetch_array($datos); 
+			return $fila;
+		}
+
+
 
 	}
 

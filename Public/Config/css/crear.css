@@ -1,0 +1,345 @@
+/*
+	Tipos de selectores
+	etiqueta ejem : div, h1, h3 ,p, input;
+	Class ejem .form, .btn
+	id ejem: #usuario, #pass;
+*/
+
+/*h1{
+	color: green;
+	background: #d50000;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: 
+
+}
+h1:hover{
+background:rgba(0, 0, 0,0.2);
+}
+
+.link{
+	color: #fff;
+}.link:hover{
+	background: rgba(0, 0, 0, 0.2);
+
+}
+.redondo img {
+border: 2px solid grey;
+margin: 0;
+padding: 0;
+border-radius: 800px;
+overflow: hidden;}*/
+body{
+	background: ;
+
+}
+
+/*img#imagen_de_fondo {
+        /* Rellenamos el fondo */
+       
+
+        /* Escalamiento proporcional */
+     /*   width: 100%;
+        height: auto;
+
+        /* Posicionamiento */
+       /* position: fixed;
+        top: 0;
+      	align-items: center;*/
+       
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+     font-size: 100%%;
+    
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #c6ff00;
+	font-size: 72;
+
+}
+h1:hover{
+	background: rgba(0, 0, 0,0.2);
+	color:  red;
+
+}
+
+#img-fondo{
+	width: 100%;
+}
+
+#titulo-one{
+	padding: 1em;
+	width: 1250px;
+	text-align: center;
+    font-size: 3em;
+}#titulo-one:hover{
+	background: transparent;
+}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.menu{
+	width: 170px;
+	height: 2em;
+	text-align: center;
+	font-size: 1.1em;
+	font-family: sans-serif;
+	background: #d50000;
+	border: 2px solid black;
+	margin: 0px;
+}
+
+
+.menu a{
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+body{
+    background:#cc9;
+    /*background:#181907;*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    margin: 0;
+}
+ 
+#registrar{
+        float:left;
+        width:80%;
+        font-size:24px;
+        font-weight:bold;
+        color:#FFF;
+        text-align:right;
+}
+ 
+#envoltura{
+        position:absolute;
+    /*left y top al 50% para que quede centrado en la pantalla*/
+    left:50%;
+    top:50%;
+    margin-left:-165px;
+    margin-top: -210px;
+    width: 330px;
+ 
+}
+ 
+#contenedor{
+    background-color:#BF00FF;
+    /*background-color:#356AA0;*/
+    /*box-shadow: 0 0 0 9px rgba(128,0,0,.1);*/
+    /*Margen de sombra alrededor del contenedor 8px negro*/
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
+    /*Las 3 líneas siguientes, sirven para el borde redondeado
+     * pero para diferentes navegadores*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+ 
+#cabecera{
+    /*linea azul que separa logo*/
+    border-bottom: 5px solid #333;
+    padding-top: 5px;
+    /*color:#FFF;*/
+    height:70px;
+    line-height:50px;
+    text-align:center;
+}
+ 
+#cuerpo{
+    background:#ececec;
+    border:solid #ccc;
+    /*aumentando el 2px 'aparece' un borde*/
+    border-width: 2px 0;
+    padding:15px 35px;
+}
+ 
+.label{
+    color: #666;
+    font-weight: bold
+}
+ 
+.input-2{
+    /*border: 1px solid #999; No usar esta línea y dejar box-shadow hace efecto de profundidad*/
+    border-radius:5px; /*probar con 10px se hacen ovalados los inputs*/
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+    font:bold 12px Arial, Helvetica, sans-serif;
+    height: 24px;
+    line-height: 20px;
+    padding:0 2px;
+    width: 230px;
+}
+ 
+.input-2 #usuario{
+    background:#ffc url(./images/loquito.jpg) no-repeat 0 2px; /*probar con #ddf.
+                                                                Para mover arriba-abajo la imagen 'jugar' con 2px, 5px */
+    /*Para que el texto dentro del input se mueva*/
+    padding-left: 25px; /*Sirve para darle espacio ala imagen, probar con 30px 10px y ver comportamiento*/
+}
+ 
+.input-2 #contrasenia{
+    background:#ffc url(./images/infinio.jpg) no-repeat 0 5px;
+    padding-left: 25px;
+ 
+}
+ 
+.boton{
+    background: #ccc;
+    /*background: -moz-linear-gradient(top,#eee,#ccc);*/
+    /*background: -moz-linear-gradient(top,#fc6,#f63);*/
+    background: -webkit-linear-gradient(top,#fc6,#f63);
+    background: linear-gradient(top,#fc6,#f63);
+    /*Color del texto*/
+    color: #666;
+    width: 120px;
+}
+ 
+/*Tip estas instrucciones animan al boton enviar
+ * para que se vea como si se pulsara*/
+.boton:active{
+    position: relative;
+    top: 3px;
+}
+ 
+#pie{
+    border-top: 5px solid #333;
+    color: #fff;
+    font-size: 11px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+}
+ 
+form,p{
+    margin:0;
+}
+ 
+p{
+    /*Para que los elementos del cuerpo
+     * se separen entre ellos probar con
+     * 10px 20px                      */
+    padding-bottom: 5px;
+}
+ 
+/*Para separar el botón de ingresar*/
+p#bot{
+    padding-top: 10px;
+}
+
+header {
+    width:100%; /* Establecemos que el header abarque el 100% del documento */
+    overflow:hidden; /* Eliminamos errores de float */
+    background:#252932;
+    margin-bottom:20px;
+}
+ 
+.wrapper {
+    width:90%; /* Establecemos que el ancho sera del 90% */
+    max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+    margin:auto; /* Centramos los elementos */
+    overflow:hidden; /* Eliminamos errores de float */
+}
+ 
+header .logo {
+    color:#f2f2f2;
+    font-size:50px;
+    line-height:200px;
+    float:left;
+}
+ 
+header nav {
+    float:right;
+    line-height:200px;
+}
+ 
+header nav a {
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    line-height:normal;
+    font-size:20px;
+    font-weight:bold;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+    background:#f56f3a;
+    border-radius:50px;
+}
+
+ * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            height:100%;
+        }
+        /* Div que engloba el contenido de la página menos el footer */
+        #wrapper {
+            min-height:100%;
+        }
+        header {
+            display:block;
+            background:#ccc;
+            padding:10px 0px;
+        }
+        section {
+            overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+            padding-bottom: 60px;
+            /* Definimos un padding superior */
+            padding-top:30px;
+        }
+        footer {
+            position: relative;
+            /* Altura total del footer en px con valor negativo */
+            margin-top: -50px;
+            /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+            height: 40px;
+            padding:5px 0px;
+            clear: both;
+            background: #286af0;
+            text-align: center;
+            color: #fff;
+        }
+ 
+        /* Esta clase define la anchura del contenido y la posicion centrada 
+           El contenido queda centrado y limitado, pero la cabecera y el pie
+           llegan hasta los limites del navegador.
+        */
+        .define {
+            width:960px;
+            margin:0 auto;
+        }

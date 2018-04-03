@@ -20,6 +20,9 @@
       <a href="<?php echo $link->url_link['principal'] . "basico/liga/Bumdesliga/"?>">Bumdesliga</a>
       <a href="<?php echo $link->url_link['principal'] . "basico/liga/CopaDelRey/"?>">Copa del rey</a>
     </nav>
+
+          <a href="<?php echo $link->url_link['helpers'] . 'exit.php'?>" class="salir"></a>
+
   </div></header>
 <center>
   <table width="90%" class="table-3">

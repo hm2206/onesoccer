@@ -15,7 +15,8 @@ Class Core{//rutas principal o publica
 	private $lista = array(//aqui se agregan las urls permitidas// solo las publicas ($url[0])
 
 								/*agregar de arriba hacia abajo*/
-									'login'
+									'login',
+									'crear'
 								);
 
 
